@@ -121,6 +121,6 @@ def send_email(title, price):
 
 
 ############### FONKSİYON ÇALIŞTIRMA BÖLÜMÜ ###############
-while(true):    
+while(True):    
     check_price()
-    time.sleep(60 * 60)
+    time.sleep(120)
