@@ -2,6 +2,7 @@
 
 import requests
 import smtplib
+import time
 from email.mime.text import MIMEText
 from bs4 import BeautifulSoup
 
@@ -72,6 +73,7 @@ def send_email_old(title, price):
 
     ## Mail serverından çıkış yap
     server.quit()
+#################################
 
 
 
@@ -119,4 +121,6 @@ def send_email(title, price):
 
 
 ############### FONKSİYON ÇALIŞTIRMA BÖLÜMÜ ###############
-check_price()
+while(true):    
+    check_price()
+    time.sleep(60 * 60)
